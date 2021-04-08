@@ -15,6 +15,7 @@
 
         <!-- mycss and media-query -->
         <link rel="stylesheet" href="assets\master.css">
+        <link rel="stylesheet" href="assets\media-query.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
 
@@ -33,8 +34,8 @@
                 <button type="button" class="bg-green btn-lg btn-block" @click="emailGenerator"><h4 class="m-0">Genera email</h4></button>
             </nav>
 
-            <div v-if="arrEmail.length < 10">
-
+            <div v-if="arrEmail.length < 10" id="imgHeader">
+                <i class="fas fa-at animate__animated animate__flipInX"></i>
             </div>
 
             <ol v-else id="emaiList" class="scroll">

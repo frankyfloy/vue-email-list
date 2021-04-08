@@ -5,8 +5,6 @@ var app = new Vue({
         numEmail : 10,
     },
 
-
-
     methods: {
         emailGenerator :function () {
             this.arrEmail = [];
