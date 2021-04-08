@@ -9,6 +9,7 @@ var app = new Vue({
 
     methods: {
         emailGenerator :function () {
+            this.arrEmail = [];
             for (var i = 0; i < this.numEmail; i++) {
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((response)  => {
