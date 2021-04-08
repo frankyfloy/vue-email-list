@@ -13,19 +13,15 @@ var app = new Vue({
             for (var i = 0; i < this.numEmail; i++) {
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((response)  => {
-                    console.log(response.data);
+                    console.log(response.data.response);
                     if (response.data.success) {
                         this.arrEmail.push(response.data.response)
                         console.log(this.arrEmail);
+                    }else {
+                        this.arrEmail.push("Email non trovata")
                     }
-
-                    // else {
-                    //     numEmail + 1;
-                    // }
                 });
-
             }
-
         }
     },
 });

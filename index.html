@@ -33,7 +33,11 @@
                 <button type="button" class="bg-green btn-lg btn-block" @click="emailGenerator"><h4 class="m-0">Genera email</h4></button>
             </nav>
 
-            <ol id="emaiList" class="scroll">
+            <div v-if="arrEmail.length < 10">
+
+            </div>
+
+            <ol v-else id="emaiList" class="scroll">
                 <li v-for="(item) in arrEmail" class="animate__animated animate__fadeInLeft">
                         {{item}}
                 </li>
