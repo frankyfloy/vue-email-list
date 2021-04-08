@@ -21,8 +21,9 @@
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
-        <!-- font family -->
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     </head>
 
     <body>
@@ -33,7 +34,7 @@
             </nav>
 
             <ol id="emaiList" class="scroll">
-                <li v-for="(item) in arrEmail">
+                <li v-for="(item) in arrEmail" class="animate__animated animate__fadeInLeft">
                         {{item}}
                 </li>
             </ol>

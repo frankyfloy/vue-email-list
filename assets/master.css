@@ -36,7 +36,16 @@ nav{
 }
 
 #emaiList{
+    margin: 20px 0;
     width: 100%;
+    list-style: none;
+    height: 100%;
+}
+
+#emaiList > li{
+    padding: 10px 0;
+    font-size: 25px;
+    color: #009788;
 }
 
 nav > button{
@@ -58,3 +67,21 @@ button:focus{
 .bg-green{
     background-color: #009788;
 }
+
+
+/* ---------------Scroll Vertical (Classe Scroll)------------------------- */
+.scroll{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.scroll::-webkit-scrollbar{
+	-webkit-overflow-scrolling: auto;
+	width: 6px;
+}
+.scroll::-webkit-scrollbar-thumb{
+	border-radius: 4px;
+    background-color: #120038;
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+/* ------------------------------------------------------------- */
