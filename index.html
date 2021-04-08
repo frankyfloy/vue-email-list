@@ -34,13 +34,13 @@
                 <button type="button" class="bg-green btn-lg btn-block" @click="emailGenerator"><h4 class="m-0">Genera email</h4></button>
             </nav>
 
-            <div v-if="arrEmail.length < 10" id="imgHeader">
+            <div v-if="arrEmail.length < numEmail" id="imgHeader">
                 <i class="fas fa-at animate__animated animate__flipInX"></i>
             </div>
 
             <ol v-else id="emaiList" class="scroll">
                 <li v-for="(item) in arrEmail" class="animate__animated animate__fadeInLeft">
-                        {{item}}
+                    {{item}}
                 </li>
             </ol>
         </div>
